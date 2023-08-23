@@ -1,7 +1,11 @@
 
+import Link from "next/link";
+
+
+
 export const Header = () => {
   return (
-    <header className="bg-white w-full fixed top-0 left-0 px-6 py-6 transition-all lg:px-16 lg:py-6 z-10">
+    <header className="bg-white w-full fixed top-0 left-0 px-6 py-6 lg:px-16 lg:py-6 z-10">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <h2 className="logo font-bold text-[#070707] text-4xl">Kilele</h2>
@@ -9,29 +13,29 @@ export const Header = () => {
         <div className="ml-auto">
           <ul className="hidden md:flex space-x-8">
             <li className="navLink hover:text-[#4dd3f5] hover:font-bold">
-              <a href="/about" aria-label="About">
+              <Link href="/about" aria-label="About">
                 About
-              </a>
+              </Link>
             </li>
             <li className="navLink hover:text-[#4dd3f5] hover:font-bold">
-              <a href="/reservation" aria-label="Reservation">
+              <Link href="/reservation" aria-label="Reservation">
                 Reservation
-              </a>
+              </Link>
             </li>
             <li className="navLink hover:text-[#4dd3f5] hover:font-bold">
-              <a href="/gallery" aria-label="Gallery">
+              <Link href="/gallery" aria-label="Gallery">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li className="navLink hover:text-[#4dd3f5] hover:font-bold">
-              <a href="/review" aria-label="Review">
+              <Link href="/review" aria-label="Review">
                 Review
-              </a>
+              </Link>
             </li>
             <li className="navLink hover:text-[#4dd3f5] hover:font-bold">
-              <a href="/contact" aria-label="Contact">
+              <Link href="/contact" aria-label="Contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
