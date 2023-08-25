@@ -8,11 +8,13 @@
   :root {
     --primary-clr: #81642d;
     --secondary-clr: #4dd3f5;
+    --hover-clr: #f8e9cc;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
+html,
 body {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
@@ -28,20 +30,16 @@ h2{
   padding: 0 8%;
 }
 
-Link{
-
-}
 
 
 @layer components {
   .navLink {
-    @apply cursor-pointer md:text-xl lg:text-xl md:tracking-wide text-[#020202] transition duration-[0.5s] hover:text-[#4dd3f5] hover:font-bold;
+    @apply cursor-pointer md:text-xl lg:text-xl md:tracking-wide text-white  hover:text-[#4dd3f5];
   }
   .btn {
-    @apply cursor-pointer flex-row items-center gap-x-3 rounded px-5 py-2 text-sm font-semibold hover:opacity-80 transition-all md:px-8 md:text-lg;
+    @apply box-border cursor-pointer flex-row items-center  rounded-lg p-4 text-sm font-semibold hover:opacity-80 transition-all md:px-8 md:text-lg;
   }
-  input {
-      @apply w-40 ml-4 p-2 text-sm md:text-xl rounded-lg;
-
+    input {
+      @apply ml-4 p-4 text-base md:text-xl md:mb-3 rounded-lg w-full md:w-auto lg:w-auto bg-transparent text-white border hover:bg-[#27241d];
   }
 }
