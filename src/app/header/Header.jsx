@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <Link href="/">
-            <h2 className="logo font-bold text-[#070707] text-4xl cursor-pointer">
+            <h2 className="logo font-bold text-white text-4xl cursor-pointer">
               Kilele
             </h2>
           </Link>
