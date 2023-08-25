@@ -7,10 +7,11 @@ export const Header = () => {
     <header className="bg-white w-full fixed top-0 left-0 px-6 py-6 lg:px-16 lg:py-6 z-10">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
-          <h2 className="logo font-bold text-[#070707] text-4xl cursor-pointer">
-            Kilele
-          </h2>
-          <Link href="/"></Link>
+          <Link href="/">
+            <h2 className="logo font-bold text-[#070707] text-4xl cursor-pointer">
+              Kilele
+            </h2>
+          </Link>
         </div>
 
         <ul className="ml-auto hidden md:flex ">
@@ -41,7 +42,7 @@ export const Header = () => {
         </button>
 
         <i
-          className="fa-solid fa-bars cursor-pointer text-4xl md:hidden"
+          className="fa-solid fa-bars cursor-pointer text-4xl md:hidden text-[#81642d]"
           aria-label="Mobile Menu"></i>
       </div>
     </header>
