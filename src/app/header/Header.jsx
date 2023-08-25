@@ -37,7 +37,9 @@ export const Header = () => {
           </li>
         </ul>
         <div className="border-white border-l-2">
-          <button className="btn text-white" aria-label="Book Now">
+          <button
+            className="btn text-white hover:bg-[#81642d] "
+            aria-label="Book Now">
             Book Now
           </button>
         </div>
