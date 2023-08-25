@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="bg-white w-full fixed top-0 left-0 px-6 py-6 lg:px-16 lg:py-6 z-10">
+    <header className="border-white border-b-2 w-full fixed top-0 left-0 px-6 py-6 lg:px-16 lg:py-6 z-10">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <Link href="/">
@@ -36,10 +36,11 @@ export const Header = () => {
             </Link>
           </li>
         </ul>
-
-        <button className="btn bg-[#81642d] text-white" aria-label="Book Now">
-          Book Now
-        </button>
+        <div className="border-white border-l-2">
+          <button className="btn text-white" aria-label="Book Now">
+            Book Now
+          </button>
+        </div>
 
         <i
           className="fa-solid fa-bars cursor-pointer text-4xl md:hidden text-[#81642d]"
