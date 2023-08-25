@@ -1,9 +1,7 @@
-
-import About from "./about/page";
-import { Contact } from "./contact/contact";
-import { Hero } from "./hero/hero";
-import './globals.css'
-import Head from "next/head";
+import About from './about/page';
+import { Hero } from './hero/hero';
+import './globals.css';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -19,9 +17,6 @@ export default function Home() {
       </Head>
       <main className="container">
         <Hero />
-        <About />
-
-        <Contact />
       </main>
     </>
   );
