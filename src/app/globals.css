@@ -24,10 +24,18 @@ h2{
   font-size: 20px;
 }
 
+.container{
+  padding: 0 8%;
+}
+
+Link{
+
+}
+
 
 @layer components {
   .navLink {
-    @apply cursor-pointer text-sm md:text-xl lg:text-xl md:tracking-wide text-[#020202] transition duration-[0.5s];
+    @apply cursor-pointer md:text-xl lg:text-xl md:tracking-wide text-[#020202] transition duration-[0.5s] hover:text-[#4dd3f5] hover:font-bold;
   }
   .btn {
     @apply cursor-pointer flex-row items-center gap-x-3 rounded px-5 py-2 text-sm font-semibold hover:opacity-80 transition-all md:px-8 md:text-lg;
