@@ -1,3 +1,4 @@
+import { metadata } from './layout';
 import About from './about/page';
 import { Hero } from './hero/hero';
 import './globals.css';
@@ -14,6 +15,7 @@ export default function Home() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
       <main className="container">
         <Hero />
