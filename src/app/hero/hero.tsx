@@ -13,11 +13,11 @@ export const Hero = () => {
           className="bg-opacity-70"
         />
         <div className='absolute inset-0 bg-gray-900 bg-opacity-40'></div>
-        <div className="absolute text-center inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-6xl md:text-8xl lg:text-8xl text-white font-bold ">
+        <div className="mt-20 absolute text-center inset-0 flex flex-col items-center justify-center">
+          <h1 className="text-5xl md:text-8xl lg:text-8xl text-white font-bold ">
             Hallo! Jambo!
           </h1>
-          <p className="text-lg md:text-xl md:mx-24 max-w-6xl px-12 py-4 text-[#fff] ">
+          <p className="text-base md:text-xl md:mx-24 max-w-6xl px-6 py-2 text-[#fff] ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation
