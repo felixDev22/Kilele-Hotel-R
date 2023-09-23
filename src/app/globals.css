@@ -41,7 +41,7 @@ h2{
 
 @layer components {
   .navLink {
-    @apply cursor-pointer md:text-xl lg:text-base md:tracking-wide text-white  hover:text-[#4dd3f5];
+    @apply cursor-pointer md:text-base lg:text-base md:tracking-wide text-white  hover:text-[#4dd3f5];
   }
   .btn {
     @apply box-border cursor-pointer flex-row items-center rounded-lg p-2.5 text-sm font-semibold hover:opacity-80 transition-all md:px-8 md:text-lg;

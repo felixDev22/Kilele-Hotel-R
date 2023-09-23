@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="border-white  border-b-2 w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-6 z-50">
+    <header className="border-white  border-b-2 w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <Link href="/">
@@ -44,11 +44,19 @@ export const Header = () => {
           </button>
         </div>
 
-        <i class="fa-solid fa-bars"></i>
-
-        <i
-          className="fa-solid fa-bars cursor-pointer text-4xl md:hidden text-white"
-          aria-label="Mobile Menu"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-8 h-8 text-white lg:hidden md:hidden">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
       </div>
     </header>
   );
