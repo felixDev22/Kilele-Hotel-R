@@ -9,6 +9,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-clr: #81642d;
+    --bg-clr: #3a2d2d;
     --secondary-clr: #4dd3f5;
     --hover-clr: #f8e9cc;
     --background-start-rgb: 0, 0, 0;
