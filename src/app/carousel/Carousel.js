@@ -6,9 +6,9 @@ import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 
 const Carousel = () => {
   const slides = [
-    '/assets/zebra.jpg',
+    '/assets/slide1.png',
     '/assets/slide2.png',
-    '/assets/slide3.png',
+    '/assets/slide5.png',
     '/assets/slide4.png',
   ];
 
@@ -40,17 +40,37 @@ const Carousel = () => {
     <div className="bg-[#3a2d2d] h-screen">
       <Zoom {...zoomInProperties}>
         {slides.map((each, index) => (
-          <div key={index} className='flex justify-center mt-24 w-full h-full flex-direction-row relative'>
+          <div
+            key={index}
+            className="flex justify-center mt-24 w-full h-full flex-direction-row relative">
             <Image
               src={each}
               alt="gallery"
-              width={1110}
-              height={500}
-              className='w-3/4 object-cover rounded-lg shadow-xl'
+              width={1100}
+              height={400}
+              className="w-3/4 h-full object-contain rounded shadow-xl"
             />
           </div>
         ))}
       </Zoom>
+      <div className="px-12 pt-8">
+        <p className=" text-xl leading-5 font-script text-[#81642d]">
+          Beyond its stunning vistas, Kilele Hotel takes pride in its commitment
+          to the community. Embark on a journey of opulence and tranquility at
+          Kilele Hotel, where luxury meets tradition.
+        </p>
+        <p className=" text-l leading-5 pt-8 text-[#fff]">
+          Beyond its stunning vistas, Kilele Hotel takes pride in its commitment
+          to the community. Embark on a journey of opulence and tranquility at
+          Kilele Hotel, where luxury meets tradition.
+        </p>
+        <button
+          type="submit"
+          value="Book now"
+          className="btn bg-[#81642d] text-white mt-8 md:text-base lg:text-lg">
+          Book Your Maasai Experience
+        </button>
+      </div>
     </div>
   );
 };
