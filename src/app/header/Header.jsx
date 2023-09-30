@@ -1,6 +1,4 @@
-
-import Link from "next/link";
-
+import Link from 'next/link';
 
 export const Header = () => {
   return (
@@ -19,17 +17,11 @@ export const Header = () => {
             <Link href="/about" aria-label="About" className="navLink">
               About
             </Link>
-            <Link
-              href="/reservation"
-              aria-label="Reservation"
-              className="navLink">
-              Reservation
-            </Link>
             <Link href="/gallery" aria-label="Gallery" className="navLink">
               Gallery
             </Link>
-            <Link href="/review" aria-label="Review" className="navLink">
-              Review
+            <Link href="/rooms" aria-label="Rooms" className="navLink">
+              Rooms
             </Link>
             <Link href="/contact" aria-label="Contact" className="navLink">
               Contact
