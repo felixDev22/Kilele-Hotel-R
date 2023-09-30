@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-row ">
+    <div className="flex flex-row overflow-hidden ">
       <div className=" h-[100vh] w-[100vh] lg:bg-[#3a2d2d] lg:w-1/2 lg:h-screen lg:mt-0 lg:relative lg:z-10 p-4 md:z-50 md:mt-52 md:justify-center  md:bg-transparent flex items-center justify-center flex-col text-white">
         <div className="flex justify-center items-center ">
           <div className="bg-[#3a2d2d] p-10 z-50 md:absolute lg:bg-transparent">
@@ -27,7 +27,7 @@ export default function About() {
                 that seamlessly blend Maasai culture and architecture with
                 modern sophistication.
               </p>
-              <p className="mt-8 lg:text-2xl md:text-xl tracking-wide lg:leading-6 font-script text-[#81642d]">
+              <p className=" text-xl leading-5 mt-8 lg:text-2xl md:text-xl  lg:leading-6 font-script text-[#81642d]">
                 Beyond its stunning vistas, Kilele Hotel takes pride in its
                 commitment to the community. Embark on a journey of opulence and
                 tranquility at Kilele Hotel, where luxury meets tradition.
@@ -43,7 +43,7 @@ export default function About() {
         </div>
       </div>
       <div className="lg:w-1/2 h-screen md:h-screen  lg:relative ">
-        <Image src="/assets/zebra.jpg" objectFit="cover" layout="fill" />
+        <Image src="/assets/slide3.png" objectFit="cover" layout="fill" alt="elephant" />
       </div>
     </div>
   );
