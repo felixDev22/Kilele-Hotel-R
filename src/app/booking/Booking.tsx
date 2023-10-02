@@ -14,7 +14,7 @@ export const Booking = () => {
             <button
               type="submit"
               value="CHECK AVAILABILITY"
-              className="btn mt-6 text-l bg-[#81642d] text-white lg:ml-6 md:text-base lg:text-lg">
+              className="btn mt-6 text-l bg-[#8d7352] text-white lg:ml-6 md:text-base lg:text-lg">
               CHECK AVAILABILITY
             </button>
           </form>

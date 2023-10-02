@@ -8,7 +8,7 @@ export default function About() {
       <div className=" h-[100vh] w-[100vh] lg:bg-[#3a2d2d] lg:w-1/2 lg:h-screen lg:mt-0 lg:relative lg:z-10 p-4 md:z-50 md:mt-52 md:justify-center  md:bg-transparent flex items-center justify-center flex-col text-white">
         <div className="flex justify-center items-center ">
           <div className="bg-[#3a2d2d] p-10 z-50 md:absolute lg:bg-transparent">
-            <div className="w-[55vw] md:[65vw] lg:px-32">
+            <div className="w-[55vw] md:[65vw] lg:px-44">
               <h3 className=" font-script lg:text-5xl md:text-6xl text-[#81642d] text-3xl">
                 Experience
               </h3>
@@ -42,8 +42,8 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="lg:w-1/2 h-screen md:h-screen  lg:relative ">
-        <Image src="/assets/slide3.png" objectFit="cover" layout="fill" alt="elephant" />
+      <div className="lg:w-[68vw] h-screen md:h-screen  lg:relative">
+        <Image src="/assets/slide3.png" objectFit="cover" layout="fill" alt="elephant"/>
       </div>
     </div>
   );
