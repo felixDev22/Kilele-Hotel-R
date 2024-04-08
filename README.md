@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<!-- PROJECT DESCRIPTION -->
 
-First, run the development server:
+# KILELE-HOTEL-WEBSITE <a name="about-project"></a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The Kilele platform enables users to book and make reservations. The website is built using Next.js and Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ScreenShots of the APP
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Kilele](https://github.com/felixDev22/Kilele-Hotel-R/assets/106531695/1f1e4ac6-e666-4ca1-ba29-5174ee3c06dd)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠 Built With <a name="built-with">
+  <ul>
+      <li>NEXTJS </li>
+      <li>Tailwind CSS</li>
+  </ul>
+</a>
 
-## Learn More
+### Live Server <a name="live-server"><a>
 
-To learn more about Next.js, take a look at the following resources:
+[KILELE-HOTEL](https://kilele-h.netlify.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👤 **Felix Nzomo Nyamai**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [GitHub](https://github.com/felixDev22)
+- [Twitter](https://twitter.com/monzo200)
+- [LinkedIn](https://www.linkedin.com/in/felixnyamai/)
 
-## Deploy on Vercel
+<!-- FUTURE FEATURES -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔭 Future Features <a name="future-features"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] **Better user interface**
+- [ ] **Complete all pages**
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/felixDev22/Kilele-Hotel-R.git/issues)
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project!
+
+<p align="right"><a href="#readme-top">back to top</a></p>
