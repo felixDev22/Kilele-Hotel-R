@@ -4,7 +4,7 @@ import { Booking } from '../booking/Booking';
 export const Hero = () => {
   return (
     <>
-      <section className="w-full h-[90vh] bg-black ">
+      <section className="w-full h-[90vh]">
         <Image
           src="/assets/image3.png"
           alt="image"
