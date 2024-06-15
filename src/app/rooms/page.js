@@ -11,9 +11,9 @@ const Rooms = () => {
         layout="fill"
         className="bg-opacity-70"
       />
-      <div className="w-80vw p-4 bg-opacity-60 bg-[#573c18] mt-[20%] ml-[10%] absolute backdrop-filter backdrop-blur-md rounded-md">
+      <div className="w-80vw p-4 bg-opacity-60 pr-8 bg-[#573c18] mt-[16%] ml-[5%] absolute backdrop-filter backdrop-blur-md rounded-md">
         <div className="form grid">
-          <form className="flex-col md:flex-row lg:flex-col flex">
+          <form className="flex-col lg:flex-col flex py-7 px-6">
             <input type="date" placeholder="Arrival Date" />
             <input type="date" placeholder="Departure Date" />
             <input type="number" placeholder="Adult" />
