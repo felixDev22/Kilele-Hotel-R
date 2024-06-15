@@ -1,8 +1,15 @@
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import menu from '../../../public/assets/menu.png';
+import close from '../../../public/assets/close.png';
 
 export const Header = () => {
+  const [toggle, setToggle] = useState(false);
   return (
-    <header className="border-white  border-b w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
+    <header className="border-white border-b w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <Link href="/">
@@ -36,19 +43,36 @@ export const Header = () => {
           </button>
         </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-8 h-8 text-white lg:hidden md:hidden">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <Image
+            src={toggle ? close : menu}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
+            onClick={() => setToggle((prev) => !prev)}
           />
-        </svg>
+
+          <div
+            className={`${
+              toggle ? 'flex' : 'hidden'
+            } min-w-[140px] absolute top-20 mx-4 p-6 rounded sidebar bg-black flex-col `}>
+            <ul >
+              <li className=" flex flex-col justify-center items-center gap-8 text-[16px] text-white mb-10 cursor-pointer letterSpacing-wide ">
+                <Link href="/about" aria-label="About" >
+                  About
+                </Link>
+                <Link href="/gallery" aria-label="Gallery" >
+                  Gallery
+                </Link>
+                <Link href="/rooms" aria-label="Rooms" >
+                  Rooms
+                </Link>
+                <Link href="/contact" aria-label="Contact" >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
   );

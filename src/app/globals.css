@@ -27,29 +27,27 @@ body {
   font-family: 'Caveat', cursive;
 }
 
-
-h2{
+h2 {
   font-weight: 400;
   font-size: 20px;
 }
 
-.container{
+.container {
   padding: 0 8%;
 }
 
 
-
 @layer components {
   .navLink {
-    @apply cursor-pointer md:text-base lg:text-base md:tracking-wide text-white  hover:text-[#4dd3f5];
+    @apply cursor-pointer md:text-base lg:text-base md:tracking-wide text-white  hover:text-[#6cf4fd];
   }
   .btn {
     @apply box-border cursor-pointer flex-row items-center rounded-lg p-2.5 text-sm font-semibold hover:opacity-80 transition-all md:px-8 md:text-lg;
   }
-    input {
-      @apply w-full mt-4 ml-4 p-2 text-base md:text-xl md:mb-3 rounded-lg  md:w-auto lg:w-auto bg-transparent text-white border hover:bg-[#27241d];
+  input {
+    @apply w-full mt-4 ml-4 p-2 text-base md:text-xl md:mb-3 rounded-lg  md:w-auto lg:w-auto bg-transparent text-white border hover:bg-[#27241d];
   }
-    .input2 {
-    @apply w-full lg:w-[150px]
+  .input2 {
+    @apply w-full lg:w-[150px];
   }
 }
