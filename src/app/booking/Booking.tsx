@@ -7,6 +7,7 @@ export const Booking = () => {
     date_of_departure: '',
     adults: 0,
     children: 0,
+    room: 0,
   });
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
@@ -16,16 +17,40 @@ export const Booking = () => {
     });
   };
 
+  const [availabilityMessage, setAvailabilityMessage] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleCheckAvailability = async (e) => {
+    e.preventDefault();
+    try{
+      const response = await axios.post('http://localhost:3000/api/v1/checkAvailability', formData);
+      if (response.data.available){
+        setAvailabilityMessage('Book Now');
+      }else{
+        setAvailabilityMessage('We currently are fully booked');
+      }
+      setShowPopup(true);
+  }catch (error){
+    console.error('Error checking availability:', error);
+    setAvailabilityMessage('Error checking availability');
+    setShowPopup(true)
+  }
+
+  const closePopup = () => {
+    setShowPopup(false)
+  };
+
+
   return (
     <>
       <div className="w-80vw p-4 mr-6">
         <div className="form grid">
           <form className="flex-col md:flex-row lg:flex-row md:space-y-0 lg:space-y-0 md:space-x-2 lg:space-x-2">
             <input type="date" placeholder="Arrival Date" name='date_of_arrival' value={formData.date_of_arrival} onChange={handleChange}/>
-            <input type="date" placeholder="Departure Date" />
-            <input type="number" placeholder="Adult" className="input2" />
-            <input type="number" placeholder="Children" className="input2" />
-            <input type="number" placeholder="Room" className="input2" />
+            <input type="date" placeholder="Departure Date" name='date_of_departure' value={formData.date_of_departure} onChange={handleChange}/>
+            <input type="number" placeholder="Adult" className="input2"  name='adults' value={formData.adults} onChange={handleChange}/>
+            <input type="number" placeholder="Children" className="input2" name='children' value={formData.children} onChange={handleChange}/>
+            <input type="number" placeholder="Room" className="input2" name='room' value={formData.room} onChange={handleChange}/>
             <button
               type="submit"
               value="CHECK AVAILABILITY"
