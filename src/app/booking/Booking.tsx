@@ -23,12 +23,10 @@ export const Booking = () => {
 
   const handleCheckAvailability = async (e) => {
     e.preventDefault();
-    console.log("this is", formData),
     try {
       const response = await axios.post(
         'http://localhost:3000/api/v1/check_availability',
         formData,
-        
       );
       if (response.data.available) {
         setAvailabilityMessage('Book Now');
@@ -87,7 +85,7 @@ export const Booking = () => {
             <input
               type="number"
               placeholder="Room"
-              className="input2"
+              className="input2 mb-8"
               name="room"
               value={formData.room}
               onChange={handleChange}
@@ -101,10 +99,10 @@ export const Booking = () => {
         </div>
       </div>
       {showPopup && (
-        <div className="popup">
+        <div className="bg-[#50dcff] p-4  rounded-lg mt-6">
           <div className="popup-inner">
-            <h2>{availabilityMessage}</h2>
-            <button onClick={closePopup}>Close</button>
+            <h2 className="text-black text-lg">{availabilityMessage}</h2>
+            <button onClick={closePopup} className='text-red-700'>Close</button>
           </div>
         </div>
       )}
