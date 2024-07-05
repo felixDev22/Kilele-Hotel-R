@@ -92,7 +92,7 @@ export const Booking = () => {
             />
             <button
               type="submit"
-              className="btn mt-6 text-l bg-[#8d7352] text-white lg:ml-6 md:text-base lg:text-lg">
+              className="btn mt-6 text-l bg-[#e0b15a] text-white lg:ml-6 md:text-base lg:text-lg">
               CHECK AVAILABILITY
             </button>
           </form>
@@ -102,7 +102,9 @@ export const Booking = () => {
         <div className="bg-[#50dcff] p-4  rounded-lg mt-6">
           <div className="popup-inner">
             <h2 className="text-black text-lg">{availabilityMessage}</h2>
-            <button onClick={closePopup} className='text-red-700'>Close</button>
+            <button onClick={closePopup} className="text-red-700">
+              Close
+            </button>
           </div>
         </div>
       )}
