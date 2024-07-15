@@ -22,9 +22,9 @@ export const Hero = () => {
             <br />
             Your Serene Safari Awaits
           </p>
-          <p className="font-script text-[35px] md:text-4xl lg:text-5xl text-[#50dcff]">
+          <span className="font-script text-l lg:text-3xl text-[#4dd3f5]">
             Explore
-          </p>
+          </span>
           <Booking />
         </div>
       </section>
