@@ -66,6 +66,9 @@ export const Header = () => {
                 <Link href="/rooms" aria-label="Rooms" >
                   Rooms
                 </Link>
+                <Link href="/contact" aria-label="Contact" >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
