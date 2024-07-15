@@ -21,7 +21,9 @@ export const Booking = () => {
     });
   };
 
-  const handleCheckAvailability = async (e: { preventDefault: () => void; }) => {
+  const handleCheckAvailability = async (
+    e: React.FormEvent<HTMLFormElement>,
+  ) => {
     e.preventDefault();
     try {
       const response = await axios.post(
