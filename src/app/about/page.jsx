@@ -1,6 +1,4 @@
-
-import Image from "next/image";
-
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -9,7 +7,7 @@ export default function About() {
         <div className="flex justify-center items-center ">
           <div className="bg-[#3a2d2d] p-10 z-50 md:absolute lg:bg-transparent">
             <div className="w-[55vw] md:[65vw] lg:px-44">
-              <h3 className=" font-script lg:text-5xl md:text-6xl text-[#81642d] text-3xl">
+              <h3 className=" font-script lg:text-5xl md:text-6xl text-[#e0b15a] text-3xl">
                 Experience
               </h3>
               <h1 className=" text-xl lg:text-4xl md:text-4xl font-bold">
@@ -27,7 +25,7 @@ export default function About() {
                 that seamlessly blend Maasai culture and architecture with
                 modern sophistication.
               </p>
-              <p className=" text-xl leading-5 mt-8 lg:text-2xl md:text-xl  lg:leading-6 font-script text-[#81642d]">
+              <p className=" text-xl leading-5 mt-8 lg:text-2xl md:text-xl  lg:leading-6 font-script text-[#e0b15a]">
                 Beyond its stunning vistas, Kilele Hotel takes pride in its
                 commitment to the community. Embark on a journey of opulence and
                 tranquility at Kilele Hotel, where luxury meets tradition.
@@ -35,7 +33,7 @@ export default function About() {
               <button
                 type="submit"
                 value="Book-Experience"
-                className="btn bg-[#81642d] text-white mt-8 md:text-base lg:text-lg">
+                className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg">
                 Book Your Maasai Experience
               </button>
             </div>
@@ -43,7 +41,12 @@ export default function About() {
         </div>
       </div>
       <div className="lg:w-[68vw] h-screen md:h-screen  lg:relative">
-        <Image src="/assets/slide3.png" objectFit="cover" layout="fill" alt="elephant"/>
+        <Image
+          src="/assets/slide3.png"
+          objectFit="cover"
+          layout="fill"
+          alt="elephant"
+        />
       </div>
     </div>
   );
