@@ -75,8 +75,8 @@ export const Booking = () => {
               onChange={handleChange}
             />
             <input
-             e type="number"
-              placeholdr="Children"
+              type="number"
+              placeholder="Children"
               className="input2"
               name="children"
               value={formData.children}
