@@ -11,24 +11,19 @@ export default function About() {
                 Experience
               </h3>
               <h1 className=" text-xl lg:text-4xl md:text-4xl font-bold">
-                Ultimate Luxury<br></br> and Cultural Fusion at
+                Ultimate Luxury<br></br> and Cultural Fusion at Kilele Hotel in
+                Amboseli
               </h1>
-              <h3 className=" lg:text-l md:text-xl tracking-wide capitalize mt-1 ">
-                Kilele Hotel in Amboseli
-              </h3>
 
               <p className=" text-sm leading-6 mt-8 lg:text-base md:text-l tracking-wide lg:leading-20 md:leading-5">
                 Introducing Kilele Hotel, a hidden gem nestled in the heart of
                 Amboseli, where breathtaking savannah panoramas and thriving
-                wildlife surround you. Indulge in the epitome of executive
-                hospitality at our establishment, boasting 20 expansive villas
-                that seamlessly blend Maasai culture and architecture with
-                modern sophistication.
+                wildlife surround you.
               </p>
               <p className=" text-xl leading-5 mt-8 lg:text-2xl md:text-xl  lg:leading-6 font-script text-[#e0b15a]">
                 Beyond its stunning vistas, Kilele Hotel takes pride in its
                 commitment to the community. Embark on a journey of opulence and
-                tranquility at Kilele Hotel, where luxury meets tradition.
+                tranquility, where luxury meets tradition.
               </p>
               <button
                 type="submit"
