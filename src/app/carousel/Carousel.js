@@ -54,7 +54,7 @@ const Carousel = () => {
         ))}
       </Zoom>
       <div className="px-12 pt-8">
-        <p className=" text-xl leading-5 font-script text-[#81642d]">
+        <p className=" text-xl leading-5 font-script text-[#e0b15a]">
           Beyond its stunning vistas, Kilele Hotel takes pride in its commitment
           to the community. Embark on a journey of opulence and tranquility at
           Kilele Hotel, where luxury meets tradition.
@@ -67,7 +67,7 @@ const Carousel = () => {
         <button
           type="submit"
           value="Book now"
-          className="btn bg-[#81642d] text-white mt-8 md:text-base lg:text-lg">
+          className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg">
           Book Your Maasai Experience
         </button>
       </div>
