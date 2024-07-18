@@ -43,7 +43,7 @@ export const Header = () => {
           </button>
         </div>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center z-40">
           <Image
             src={toggle ? close : menu}
             alt="menu"
@@ -55,19 +55,16 @@ export const Header = () => {
             className={`${
               toggle ? 'flex' : 'hidden'
             } min-w-[140px] absolute top-20 mx-4 p-6 rounded sidebar bg-black flex-col `}>
-            <ul >
+            <ul>
               <li className=" flex flex-col justify-center items-center gap-8 text-[16px] text-white mb-10 cursor-pointer letterSpacing-wide ">
-                <Link href="/about" aria-label="About" >
+                <Link href="/about" aria-label="About">
                   About
                 </Link>
-                <Link href="/gallery" aria-label="Gallery" >
+                <Link href="/gallery" aria-label="Gallery">
                   Gallery
                 </Link>
-                <Link href="/rooms" aria-label="Rooms" >
+                <Link href="/rooms" aria-label="Rooms">
                   Rooms
-                </Link>
-                <Link href="/contact" aria-label="Contact" >
-                  Contact
                 </Link>
               </li>
             </ul>

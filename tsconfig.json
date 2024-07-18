@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "allowUnreachableCode": true,
     "skipLibCheck": true,
@@ -19,9 +15,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -35,9 +29,12 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "src/app/about/page.jsx", "src/app/gallery/page.js", "src/app/header/Header.jsx", "src/app/contact/page.jsx", "src/app/hero/hero.js"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    ".next/types/**/*.ts",
+    "src/app/about/page.jsx",
+    "src/app/gallery/page.js",
+    "src/app/header/Header.jsx",
+    "src/app/contact/page.jsx",
+    "src/app/hero/hero.js"
+  ],
+  "exclude": ["node_modules"]
 }
