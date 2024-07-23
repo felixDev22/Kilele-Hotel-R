@@ -6,9 +6,9 @@ export const Booking = () => {
   const [formData, setFormData] = useState({
     date_of_arrival: '',
     date_of_departure: '',
-    adults: 0,
-    children: 0,
-    room: 0,
+    adults: '',
+    children: '',
+    room: '',
   });
 
   const [availabilityMessage, setAvailabilityMessage] = useState('');
