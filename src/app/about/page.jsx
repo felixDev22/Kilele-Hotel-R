@@ -20,10 +20,10 @@ export default function About() {
                 Amboseli, where breathtaking savannah panoramas and thriving
                 wildlife surround you.
               </p>
-              <p className=" text-xl leading-5 mt-8 lg:text-2xl md:text-xl  lg:leading-6 font-script text-[#e0b15a]">
+              {/* <p className=" text-xl leading-5 mt-8 lg:text-2xl md:text-xl  lg:leading-6 font-script text-[#e0b15a]">
                 Beyond its stunning vistas, Kilele Hotel takes pride in its
                 commitment to the community.
-              </p>
+              </p> */}
               <button
                 type="submit"
                 value="Book-Experience"
