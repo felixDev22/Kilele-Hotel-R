@@ -45,9 +45,9 @@ h2 {
     @apply box-border cursor-pointer flex-row items-center rounded-lg p-2.5 text-sm font-semibold hover:opacity-80 transition-all md:px-8 md:text-lg;
   }
   input {
-    @apply  w-full mt-4 ml-4 p-2 text-base md:text-xl  rounded-lg  md:mb-3 lg:w-auto bg-transparent text-white border hover:bg-[#27241d];
+    @apply  w-full mt-4 ml-4 p-2 text-base md:text-xl  lg:w-[200px] rounded-lg  md:mb-3 bg-transparent text-white border hover:bg-[#27241d];
   }
   .input2 {
-    @apply w-full lg:w-[150px];
+    @apply w-full ;
   }
 }
