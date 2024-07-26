@@ -9,7 +9,7 @@ import close from '../../../public/assets/close.png';
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="border-white border-b w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
+    <header className="border-white border-b bg-[#3a2d2d] w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <Link href="/">
