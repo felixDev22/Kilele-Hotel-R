@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -14,7 +15,6 @@ export default function About() {
                 Ultimate Luxury<br></br> and Cultural Fusion at Kilele Hotel in
                 Amboseli
               </h1>
-
               <p className=" text-sm leading-6 mt-8 lg:text-base md:text-l tracking-wide lg:leading-20 md:leading-5">
                 Introducing Kilele Hotel, a hidden gem nestled in the heart of
                 Amboseli, where breathtaking savannah panoramas and thriving
@@ -24,12 +24,14 @@ export default function About() {
                 Beyond its stunning vistas, Kilele Hotel takes pride in its
                 commitment to the community.
               </p> */}
+              <Link href="/rooms">
               <button
                 type="submit"
                 value="Book-Experience"
                 className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg">
                 Book Your Maasai Experience
               </button>
+              </Link>
             </div>
           </div>
         </div>
