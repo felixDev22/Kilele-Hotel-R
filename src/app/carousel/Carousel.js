@@ -9,7 +9,7 @@ const Carousel = () => {
     '/assets/slide1.png',
     '/assets/slide2.png',
     '/assets/slide5.png',
-    '/assets/slide4.png',
+    '/assets/slide6.png',
   ];
 
   const zoomInProperties = {
