@@ -30,9 +30,6 @@ export const Header = () => {
             <Link href="/rooms" aria-label="Rooms" className="navLink">
               Rooms
             </Link>
-            <Link href="/contact" aria-label="Contact" className="navLink">
-              Contact
-            </Link>
           </li>
         </ul>
         <div className="border-white border-l">
