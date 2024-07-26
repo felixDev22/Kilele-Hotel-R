@@ -37,7 +37,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="bg-[#3a2d2d] h-screen">
+    <div className="bg-[#3a2d2d] h-auto">
       <Zoom {...zoomInProperties}>
         {slides.map((each, index) => (
           <div
@@ -46,20 +46,20 @@ const Carousel = () => {
             <Image
               src={each}
               alt="gallery"
-              width={1100}
-              height={400}
+              width={900}
+              height={300}
               className="w-3/4 h-full object-contain rounded shadow-xl"
             />
           </div>
         ))}
       </Zoom>
-      <div className="px-12 pt-8">
-        <p className=" text-xl leading-5 font-script text-[#e0b15a]">
+      <div className="px-12 pt-8 lg:ml-60 lg:w-[1100px]">
+        <p className=" text-xl lg:text-[48px] lg:leading-10  leading-5 font-script text-[#e0b15a]">
           Beyond its stunning vistas, Kilele Hotel takes pride in its commitment
           to the community. Embark on a journey of opulence and tranquility at
           Kilele Hotel, where luxury meets tradition.
         </p>
-        <p className=" text-l leading-5 pt-8 text-[#fff]">
+        <p className=" text-l leading-5 pt-8 text-[#fff] lg:text-[20px] lg:leading-6">
           Beyond its stunning vistas, Kilele Hotel takes pride in its commitment
           to the community. Embark on a journey of opulence and tranquility at
           Kilele Hotel, where luxury meets tradition.
@@ -68,7 +68,7 @@ const Carousel = () => {
           <button
             type="submit"
             value="Book now"
-            className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg">
+            className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg mb-60">
             Book Your Maasai Experience
           </button>
         </Link>

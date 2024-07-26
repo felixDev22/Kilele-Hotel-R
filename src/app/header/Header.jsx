@@ -9,7 +9,7 @@ import close from '../../../public/assets/close.png';
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="border-white border-b w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
+    <header className="border-white border-b bg-[#3a2d2d] w-full fixed top-0 left-0 px-6 py-2 lg:px-16 lg:py-2 z-50">
       <div className="flex items-center justify-between space-x-2 md:space-x-10">
         <div>
           <Link href="/">
@@ -30,17 +30,16 @@ export const Header = () => {
             <Link href="/rooms" aria-label="Rooms" className="navLink">
               Rooms
             </Link>
-            <Link href="/contact" aria-label="Contact" className="navLink">
-              Contact
-            </Link>
           </li>
         </ul>
         <div className="border-white border-l">
-          <button
-            className="btn text-white hover:bg-[#81642d] "
-            aria-label="Book Now">
-            Book Now
-          </button>
+          <Link href="/rooms">
+            <button
+              className="btn text-white hover:bg-[#81642d] "
+              aria-label="Book Now">
+              Book Now
+            </button>
+          </Link>
         </div>
 
         <div className="sm:hidden flex flex-1 justify-end items-center z-40">
