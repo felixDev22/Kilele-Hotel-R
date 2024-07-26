@@ -33,11 +33,13 @@ export const Header = () => {
           </li>
         </ul>
         <div className="border-white border-l">
-          <button
-            className="btn text-white hover:bg-[#81642d] "
-            aria-label="Book Now">
-            Book Now
-          </button>
+          <Link href="/rooms">
+            <button
+              className="btn text-white hover:bg-[#81642d] "
+              aria-label="Book Now">
+              Book Now
+            </button>
+          </Link>
         </div>
 
         <div className="sm:hidden flex flex-1 justify-end items-center z-40">
