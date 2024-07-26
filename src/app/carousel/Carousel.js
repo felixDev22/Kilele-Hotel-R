@@ -46,14 +46,14 @@ const Carousel = () => {
             <Image
               src={each}
               alt="gallery"
-              width={1100}
-              height={400}
+              width={900}
+              height={300}
               className="w-3/4 h-full object-contain rounded shadow-xl"
             />
           </div>
         ))}
       </Zoom>
-      <div className="px-12 pt-8 lg:ml-40 ">
+      <div className="px-12 pt-8 lg:ml-60 lg:w-[1100px]">
         <p className=" text-xl lg:text-[48px] lg:leading-10  leading-5 font-script text-[#e0b15a]">
           Beyond its stunning vistas, Kilele Hotel takes pride in its commitment
           to the community. Embark on a journey of opulence and tranquility at
