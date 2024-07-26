@@ -1,8 +1,8 @@
-
 import Image from 'next/image';
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
+import Link from 'next/link';
 
 const Carousel = () => {
   const slides = [
@@ -64,12 +64,14 @@ const Carousel = () => {
           to the community. Embark on a journey of opulence and tranquility at
           Kilele Hotel, where luxury meets tradition.
         </p>
-        <button
-          type="submit"
-          value="Book now"
-          className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg">
-          Book Your Maasai Experience
-        </button>
+        <Link href="/rooms">
+          <button
+            type="submit"
+            value="Book now"
+            className="btn bg-[#e0b15a] text-white mt-8 md:text-base lg:text-lg">
+            Book Your Maasai Experience
+          </button>
+        </Link>
       </div>
     </div>
   );
