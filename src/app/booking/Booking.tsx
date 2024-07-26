@@ -15,14 +15,14 @@ export const Booking = () => {
   const [availabilityMessage, setAvailabilityMessage] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any } }) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleCheckAvailability = async (e) => {
+  const handleCheckAvailability = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     try {
       const response = await axios.post(
@@ -54,7 +54,6 @@ export const Booking = () => {
           <form
             className="flex-col md:flex-row lg:flex-row md:space-y-0 lg:space-y-0 md:space-x-2 lg:space-x-2"
             onSubmit={handleCheckAvailability}>
-           
             <input
               type="date"
               placeholder="Arrival Date"
@@ -62,7 +61,7 @@ export const Booking = () => {
               value={formData.date_of_arrival}
               onChange={handleChange}
             />
-            
+
             <input
               type="date"
               placeholder="Departure Date"
@@ -74,7 +73,6 @@ export const Booking = () => {
             <input
               type="number"
               placeholder="Adult"
-             
               name="adults"
               value={formData.adults}
               onChange={handleChange}
@@ -83,7 +81,6 @@ export const Booking = () => {
             <input
               type="number"
               placeholder="Children"
-            
               name="children"
               value={formData.children}
               onChange={handleChange}
@@ -91,7 +88,6 @@ export const Booking = () => {
             <input
               type="number"
               placeholder="Room"
-             
               name="room"
               value={formData.room}
               onChange={handleChange}
